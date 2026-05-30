@@ -160,6 +160,71 @@ function Home() {
           </Link>
         </Reveal>
       </section>
+
+      {/* BIOLOGY SECTION */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-surface via-[#f4f7ff] to-surface py-24 border-t border-blue-100/50">
+        <div className="absolute top-1/2 -right-40 w-[450px] h-[450px] rounded-full bg-teal-400/5 blur-3xl" />
+        <div className="absolute bottom-10 -left-40 w-[450px] h-[450px] rounded-full bg-primary/5 blur-3xl" />
+        
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+          <Reveal>
+            <div className="relative group">
+              {/* Decorative background glow matching the cell colors */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-tr from-primary/25 to-teal-500/25 blur-2xl opacity-60 group-hover:opacity-80 transition duration-500" />
+              
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden glass border border-white/40 shadow-2xl">
+                <img 
+                  src="/cancer_cells.png" 
+                  alt="Breast Cancer Cell Division" 
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 left-6 right-6 flex items-center justify-between text-xs text-white/90 backdrop-blur-md bg-navy/35 py-2 px-4 rounded-full border border-white/10">
+                  <span className="font-medium tracking-wide">Microscopic Cellular Mitosis</span>
+                  <span className="text-teal-300 font-semibold uppercase tracking-wider">Histopathology</span>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.15}>
+            <div>
+              <div className="text-xs uppercase tracking-[0.25em] text-teal-600 font-bold mb-4">Understanding the Biology</div>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-navy tracking-tight leading-[1.1]">
+                What is Invasive Ductal Carcinoma?
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+                Invasive Ductal Carcinoma (IDC) is the most common form of breast cancer, representing approximately <strong>80%</strong> of all diagnoses. It begins in the milk ducts and penetrates the surrounding breast tissues.
+              </p>
+              <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+                Through histopathology, pathologists examine biopsied tissue under a microscope to spot abnormal cell growth, irregular nuclei, and rapid mitotic divisions. Early identification is the single most critical factor in successful clinical outcomes.
+              </p>
+              
+              <div className="mt-8 grid sm:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3 p-4 rounded-2xl bg-white/60 border border-blue-50/50 shadow-sm">
+                  <div className="w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center text-teal-600 font-bold shrink-0">
+                    🔬
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-navy text-sm">Cell Anomalies</h4>
+                    <p className="text-xs text-muted-foreground mt-0.5">Detects cellular structure variations.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-4 rounded-2xl bg-white/60 border border-blue-50/50 shadow-sm">
+                  <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary font-bold shrink-0">
+                    ⚡
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-navy text-sm">Rapid Analysis</h4>
+                    <p className="text-xs text-muted-foreground mt-0.5">Identifies IDC features in seconds.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
     </>
   );
 }
